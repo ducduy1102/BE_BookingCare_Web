@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       password: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
       firstName: {
         type: Sequelize.STRING,
@@ -30,7 +30,8 @@ module.exports = {
         type: Sequelize.STRING,
       },
       image: {
-        type: Sequelize.STRING,
+        // type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
       roleId: {
         type: Sequelize.STRING,

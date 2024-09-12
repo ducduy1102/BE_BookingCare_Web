@@ -12,8 +12,8 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       image: {
-        // type: Sequelize.BLOB("long"),
-        type: Sequelize.BYTEA,
+        type: Sequelize.BLOB("long"),
+        // type: Sequelize.BYTEA,
       },
       descriptionHTML: {
         type: Sequelize.TEXT,

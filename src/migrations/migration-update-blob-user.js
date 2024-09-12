@@ -4,8 +4,8 @@ module.exports = {
       const table = await queryInterface.describeTable("Users");
       if (table && table.image) {
         return queryInterface.changeColumn("Users", "image", {
-          // type: Sequelize.BLOB("long"),
-          type: Sequelize.BYTEA,
+          type: Sequelize.BLOB("long"),
+          // type: Sequelize.BYTEA,
           allowNull: true,
         });
       } else {
@@ -23,7 +23,8 @@ module.exports = {
       const table = await queryInterface.describeTable("Users");
       if (table && table.image) {
         return queryInterface.changeColumn("Users", "image", {
-          type: Sequelize.STRING,
+          // type: Sequelize.STRING,
+          type: Sequelize.TEXT,
           allowNull: true,
         });
       } else {
